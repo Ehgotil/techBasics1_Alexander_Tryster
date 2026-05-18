@@ -65,3 +65,5 @@ for i in range(8):
 
 update()
 done()
+
+# Academiccloud AI was used to explain how to implement def get_next_y(prev_y): and implement prev_y into def randomise.
