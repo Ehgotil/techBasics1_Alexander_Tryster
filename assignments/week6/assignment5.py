@@ -38,8 +38,6 @@ class TextAdventure:
     def play(self):
         print(
             "You find yourself in an abandoned shopping mall. You can only hold one item at once. You start in the candy store. Your goal is to escape. Which way will you go?\n")
-
-        # Display initial room description
         print(f"--- {self.get_room()['name'].upper()} ---")
         print(self.get_room()['description'])
 
@@ -68,7 +66,6 @@ class TextAdventure:
     def go_to(self, room_name):
         room = self.get_room()
         if room_name in room["exits"]:
-            # Find the index of the destination room
             for idx, loc in enumerate(self.locations):
                 if loc["name"] == room_name:
                     self.current_location_idx = idx
