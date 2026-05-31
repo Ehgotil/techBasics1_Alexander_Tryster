@@ -45,10 +45,8 @@ def display_leaderboard(top_n=5):
     scores.sort(key=lambda x: x[2])
     print("\nSCOREBOARD... for the losers who care.")
     print(f"{'Rank':<5} {'Player':<15} {'Date/Time':<20} {'Time':<10}")
-    print("-" * 52)
     for rank, (name, item_time, p_time) in enumerate(scores[:top_n], start=1):
         print(f"{rank:<5} {name:<15} {item_time:<20} {p_time:<10.2f}s")
-    print("-" * 52 + "\n")
 # This function displays the scoreboard at the end of a run and adds the flavour text to give the scoreboard some personality.
 class TextAdventure:
     def __init__(self):
@@ -142,7 +140,7 @@ class TextAdventure:
         if item_name not in room["items"]:
             print(f"There is no '{item_name}' here.")
         elif self.inventory:
-            print(f"Your inventory is full! You are currently carrying a {self.inventory}.")
+            print(f"You can't carry more. You're already carrying a {self.inventory}. Go to the gym some time.")
         else:
             room["items"].remove(item_name)
             self.inventory = item_name
