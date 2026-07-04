@@ -20,5 +20,5 @@ My main takeaways from reading the code were that even a deceptively simple prog
 
 I found the code difficult to understand when it came to the details. I was able to identify general structures, such as what function handles what part of the code, but when it came to the specifics of how the "Key" class works, I was overwhelmed. I used Gemini AI to answer specific questions, but did my best to start on my own. Gemini was especially useful to explain the intricacies of the respond(self, text) function. I am now confident that I understand what the program does, even though the details are still a little nebulous to me, since I do not feel entirely comfortable with python yet.
 
-The link to my code is:
+The link to my reference code is:
 https://github.com/wadetb/eliza/blob/master/eliza.py
